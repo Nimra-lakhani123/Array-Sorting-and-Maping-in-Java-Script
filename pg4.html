@@ -1,0 +1,26 @@
+<hmtl>
+    <body>
+        <h2>Java Script Sorting and maping in Array</h2>
+        <button onclick="ascending()">Ascending order</button>
+        <button onclick="descending()">Descending order</button>
+        <p id="result"></p>
+        <script>
+            var points=[12,34,23,56,52,90]
+            document.getElementById("result").innerHTML=points
+            function ascending(){
+                points.sort(function(a,b){return (a-b)})
+                document.getElementById("result").innerHTML=points
+            }
+            function descending(){
+                points.sort(function(a,b){return (b-a)})
+                document.getElementById("result").innerHTML=points
+                
+            }
+            var  newarray1=numbers.map(myfunction)
+            document.getElementById("ascending").innerHTML=newarray1
+            var  newarray2=numbers.map(myfunction)
+            document.getElementById("descending").innerHTML=newarray2
+
+        </script>
+    </body>
+</hmtl>
